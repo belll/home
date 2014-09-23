@@ -1,6 +1,17 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+
+body#layout ul{list-style-type:none;list-style:none}
+body#layout ul li{list-style-type:none;list-style:none}
+body#layout #headerbwrap {height:auto;}
+body#layout #blogtitle {min-height:120px;}
+body#layout #content {}
+body#layout #slider {display:none;}
+body#layout .sidebarrdivsearch {display:none;}
+body#layout #headbox{display:none;}
+body#layout #nav2{width:90%;}
+
+html { font-family: 맑은 고딕; sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; }
 
