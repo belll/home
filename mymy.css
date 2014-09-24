@@ -57,17 +57,7 @@ pre { overflow: auto; }
 
 code, kbd, pre, samp { font-family: monospace,monospace; font-size: 1em; }
 
-button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0; }
-
-button { overflow: visible; }
-
-button, select { text-transform: none; }
-
-button, html input[type=button], input[type=reset], input[type=submit] { -webkit-appearance: button; cursor: pointer; }
-
-button[disabled], html input[disabled] { cursor: default; }
-
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0; }
 
 input { line-height: normal; }
 
@@ -160,19 +150,6 @@ td, th { padding: 0; }
 
 .show-on-mobiles { display: none; }
 
-/* Responsive Stuff */
-@media screen and (max-width: 568px) { /* Stack anything that isn’t full-width on smaller screens */
-  .grid .unit { width: 100% !important; padding-left: 20px; padding-right: 20px; }
-  .unit .grid .unit { padding-left: 0px; padding-right: 0px; }
-  /* Sometimes, you just want to be different on small screens */
-  .center-on-mobiles { text-align: center !important; }
-  .hide-on-mobiles { display: none !important; }
-  .show-on-mobiles { display: block !important; }
-  a .show-on-mobiles { display: inline !important; } }
-/* Expand the wrap a bit further on larger screens */
-/*@media screen and (min-width: 1180px) { .wrap .grid { max-width: 1180px; margin: 0 auto; }
-}*/
-/* Base */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 body { font: 300 21px Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #ddd; background-color: #333; border-top: 5px solid #fc0; -webkit-box-shadow: inset 0 3px 30px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 0 3px 30px rgba(0, 0, 0, 0.3); box-shadow: inset 0 3px 30px rgba(0, 0, 0, 0.3); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
@@ -189,31 +166,7 @@ header h1, header nav { display: inline-block; }
 
 header h1 span { display: none; }
 
-nav ul { padding: 0; margin: 0; }
 
-nav li { display: inline-block; }
-
-.main-nav { margin-top: 52px; }
-
-.main-nav li { margin-right: 10px; }
-
-.main-nav li a { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; font-weight: 900; font-size: 14px; padding: 0.5em 1em; text-shadow: none; text-transform: uppercase; -webkit-transition: all .25s; -moz-transition: all .25s; -o-transition: all .25s; transition: all .25s; }
-
-.main-nav li a:hover { background-color: #252525; -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1); -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
-
-.main-nav li.current a { background-color: #fc0; color: #222; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3); }
-
-.mobile-nav ul { overflow: hidden; width: 100%; display: table; }
-
-.mobile-nav a { float: left; width: 100%; background-color: #333; color: #fc0; text-align: center; text-transform: uppercase; font-size: 14px; font-weight: 900; padding: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
-
-.mobile-nav .current a { background-color: #fc0; color: #222; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 5px rgba(0, 0, 0, 0.5); text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3); }
-
-.mobile-nav li { display: table-cell; width: 20%; padding: 8px 2px; }
-
-@media (max-width: 768px) { .main-nav ul { text-align: right; } }
-@media (max-width: 830px) { .main-nav .show-on-mobiles { display: inline; }
-  .main-nav .hide-on-mobiles { display: none; } }
 /* Footer */
 footer { background-color: #222; font-size: 16px; padding-bottom: 5px; color: #888; margin-top: 40px; }
 
