@@ -22,6 +22,10 @@
     margin-left:.2em
 }
 
+.body{
+    background-color:'red';
+}
+
 .icon-pause:before{
     content:'\e800'
 }
